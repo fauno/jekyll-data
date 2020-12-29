@@ -8,6 +8,7 @@ module JekyllData
       @site = site
       @content = {}
       @entry_filter = Jekyll::EntryFilter.new(site)
+      @source_dir = site.in_source_dir("/")
     end
 
     def read(dir)
